@@ -13,7 +13,8 @@ class ChannelController extends Controller
     {
         //
         // $channels = Channel::orderBy('id','desc')->paginate(10);
-        $channels = Channel::all();
+        // $channels = Channel::all();
+        $channels = Channel::orderBy('id','desc')->get();
         return view("index", compact("channels"));
     }
 
