@@ -17,7 +17,7 @@ class ChannelTableSeeder extends Seeder
         //Khoi tao doi tuong Faker
         $faker = Faker::create();
         // Chạy vòng lặp xác định Số bản ghi và Kiểu dữ liệu từ Faker
-        for ($i = 0; $i < 20; $i++) {
+        for ($i = 0; $i < 24; $i++) {
             Channel::create([
                 'ChannelName' => $faker->name,
                 'Description' => $faker->sentence,
